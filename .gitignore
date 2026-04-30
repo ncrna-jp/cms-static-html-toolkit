@@ -1,0 +1,6 @@
+site/
+crawl-output/
+toolkit.config.json
+node_modules/
+.DS_Store
+Thumbs.db

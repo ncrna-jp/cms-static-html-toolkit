@@ -1,0 +1,65 @@
+{
+  "targetOrigin": "https://www.example.com",
+  "startUrls": ["/"],
+  "internalHosts": ["www.example.com", "example.com"],
+  "canonicalHost": "www.example.com",
+  "siteDir": "site",
+  "reportDir": "crawl-output",
+  "localOrigin": "http://127.0.0.1:8123",
+  "userAgent": "cms-static-html-toolkit/1.0 (+https://www.example.com/)",
+  "maxPages": 8000,
+  "maxAssets": 20000,
+  "concurrency": 6,
+  "delayMs": 120,
+  "internalAssetPrefixes": [
+    "/images/",
+    "/media/",
+    "/modules/",
+    "/templates/",
+    "/components/",
+    "/plugins/",
+    "/libraries/",
+    "/assets/",
+    "/uploads/",
+    "/files/"
+  ],
+  "skipPagePathPrefixes": [
+    "/administrator",
+    "/admin",
+    "/api/"
+  ],
+  "skipPagePathIncludes": [
+    "/component/users",
+    "/wp-admin",
+    "/wp-login"
+  ],
+  "skipQueryParams": ["print"],
+  "skipQueryParamValues": {
+    "format": ["feed"],
+    "tmpl": ["component"]
+  },
+  "logoPath": "images/logo.png",
+  "logoSelectors": ["id=\"rt-logo\"", "#rt-logo"],
+  "breadcrumbCssPaths": [],
+  "preloadImagePaths": [],
+  "requiredAssets": [],
+  "redirectMappings": {},
+  "copyIfMissing": [],
+  "bytePlaceholders": [],
+  "keepUnreferencedPaths": [],
+  "pathReplacements": [],
+  "cdnReplacements": [],
+  "removeScriptSrcPatterns": [
+    "https?://platform\\.twitter\\.com/widgets\\.js"
+  ],
+  "removeHtmlPatterns": [
+    "<script\\b[^>]*src=[\"']https://www\\.google\\.com/recaptcha/api\\.js[^\"']*[\"'][^>]*></script>"
+  ],
+  "externalLiteralAllowPatterns": [
+    "schema\\.org",
+    "ogp\\.me",
+    "w3\\.org",
+    "gnu\\.org",
+    "developer\\.mozilla"
+  ]
+}
